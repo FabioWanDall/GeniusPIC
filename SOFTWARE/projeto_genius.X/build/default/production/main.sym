@@ -1,0 +1,174 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B-01E _Randseed
+01F     size_p1
+020-027 seq_p1
+028     size_p2
+029-030 seq_p2
+031-032 input_color
+033     delay_debounce
+034     player
+035     MAIN.size
+036-03D MAIN.seq
+03E-03F MAIN.is_end
+040.0   MAIN.start
+040.1   MAIN.flag_p1
+040.2   MAIN.flag_p2
+041     MAIN.answer
+042     MAIN.atual_state_bt
+043-044 show_sequence.sequence
+043-044 show_end_leds.is_end
+043-044 increment_sequence_size.sequence
+043     select_buttomn_pressed.size
+044     add_in_sequence_player.player
+044     select_buttomn_pressed.@SCRATCH1
+045     increment_sequence_size.size
+045     turn_on_led_two_losers.i
+045-046 add_in_sequence_player.color
+045     show_sequence.size
+045-046 turn_on_led_winner.player
+045     turn_on_led_two_winners.i
+046     show_sequence.i
+046     increment_sequence_size.val
+047     turn_on_led_winner.i
+047     add_in_sequence_player.size
+047-04A @MUL3232.P1
+047     show_sequence.@SCRATCH1
+047     rand.@SCRATCH1
+047     increment_sequence_size.@SCRATCH1
+048     show_sequence.@SCRATCH2
+048     rand.@SCRATCH2
+048     add_in_sequence_player.@SCRATCH1
+048     increment_sequence_size.@SCRATCH2
+049-04A turn_on_led.color
+049     rand.@SCRATCH3
+049     add_in_sequence_player.@SCRATCH2
+04A-04B @DIV1616.P1
+04A     rand.@SCRATCH4
+04B     @WRITEBITA.P1
+04B-04E @MUL3232.P2
+04B     turn_on_led.@SCRATCH1
+04C-04D @DIV1616.P1
+04C     @delay_ms1.P2
+04C     @WRITEBITA.P3
+04D-04E @WRITEBITA.P1
+04E     @DIV1616.@SCRATCH1
+04F     @MUL3232.@SCRATCH1
+050     @MUL3232.@SCRATCH2
+051     @MUL3232.@SCRATCH3
+052     @MUL3232.@SCRATCH4
+053     @MUL3232.@SCRATCH5
+054     @MUL3232.@SCRATCH6
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000BA  TIMER0_isr
+0000C0  EXT_isr
+0000C6  turn_on_led_onoff
+0000D0  @MUL3232
+000126  @DIV1616
+00016A  rand
+0001D4  increment_sequence_size
+0002AA  @WRITEBITA
+0002E8  @delay_ms1
+00030E  turn_on_led
+000370  show_sequence
+0003A4  turn_on_led_two_winners
+00041E  turn_on_led_two_losers
+000456  turn_on_led_winner
+000574  show_end_leds
+00059A  add_in_sequence_player
+0005FE  select_buttomn_pressed
+00070C  turn_off_led_onoff
+000716  @cinit1
+000716  MAIN
+000732  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Fabio\Documents\projeto final microcontroladores pic\codigo\projeto_genius.X\
+
+Project Files:
+    main.c                                                  [14-jun-17 18:04  CRC=F16CC6D8]
+    main.h                                                  [12-jun-17 08:41  CRC=D872A938]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4520.h [20-mar-15 14:31  CRC=7063617D]
+    leds.h                                                  [14-jun-17 12:24  CRC=4F65D479]
+    logic.h                                                 [14-jun-17 17:41  CRC=9401108C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [07-dez-14 17:58  CRC=07F0FCBD]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [05-set-14 11:47  CRC=897CEC6C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [05-set-14 11:49  CRC=18AFD095]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-jan-08 14:55  CRC=2D1F019F]
+    buttons.h                                               [14-jun-17 18:02  CRC=AB4C89F1]
+
+Source signature=4B7F85D1
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=80A9
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+    Predefined symbols:
+       #define __18F4520 1
+
+Output Files:
+    XREF file:   build\default\production\main.xsym
+    Errors:      build\default\production\main.err
+    Ext Symbols: build\default\production\main.esym
+    INHX32:      build\default\production\main.hex
+    Symbols:     build\default\production\main.sym
+    List:        build\default\production\main.lst
+    Debug/COFF:  build\default\production\main.cof
+    Project:     main.ccspjt
+    Call Tree:   build\default\production\main.tre
+    Statistics:  build\default\production\main.STA

@@ -1,0 +1,72 @@
+
+ROM used:   2024/32768 (6%)
+            2024/32768 (6%) including unused fragments
+
+            0.6 Average locations per line
+            2.9 Average locations per statement
+
+RAM used:   67/1536 (4%) at main() level
+            85/1536 (6%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  100    36   5  main.c
+    7     0   0  main.h
+  842     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4520.h
+  124    56   8  leds.h
+  103    45   7  logic.h
+ 1351   359  52  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+  433   130  19  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+  109    62   9  buttons.h
+----- -----
+ 3129   688 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     98   2    3     78  1.3  turn_on_led
+0     62   2    6             @WRITEBITA
+0     52   1    6    127  4.2  show_sequence
+0     56   1    1    238  3.2  turn_on_led_two_losers
+0    122   3    1    555  3.4  turn_on_led_two_winners
+0    286   7    3    380  3.3  turn_on_led_winner
+0     10   0    0     17  0.8  turn_on_led_onoff
+0     10   0    0     51  1.3  turn_off_led_onoff
+0     86   2   14             @MUL3232
+0    106   3    4    101  3.8  rand
+0     68   2    5             @DIV1616
+0    100   2    6    313  5.3  add_in_sequence_player
+0    214   5    6    431  7.3  increment_sequence_size
+0     38   1    2    124  1.4  show_end_leds
+0    270   7    2   1789  4.4  select_buttomn_pressed
+0      6   0    0      5  1.0  TIMER0_isr
+0      6   0    0      5  1.0  EXT_isr
+0    214   5   14   1262  8.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               15
+    Statements              688
+    Comments                1035
+    Volume (V)              8409
+    Difficulty (D)          52.0
+    Effort to implement (E) 436970
+    Time to implement (T)   6 hours, 45 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   37
+    Maintainability (MI)    90
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-07FFE  1842  30740  
+
+
+
